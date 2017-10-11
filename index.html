@@ -13,9 +13,23 @@
       </div>
       <button class="addoption">Lägg till</button>
     </div>
+    <div class="resultSection"></div>
     <button class "chosebutton">Välj</button>
     <div class="kungbild">
     <img src="https://www.svtstatic.se/image-cms/svtse/1493500821/nyheter/inrikes/article13485023.svt/alternates/extralarge/kungen-jpg"
   </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function() {
+  $('.resultSection').hide()
+
+  var add_option = function() {
+    $('.inputs').append('<input></input')
+  }
+
+  $('.addoption').click(add_option)
+})
+</script>
   </body>
 </html>
